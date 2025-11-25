@@ -1,4 +1,6 @@
-OBJECTS = source/loader.o source/kmain.o source/io.o drivers/framebuffer.o
+OBJECTS = source/loader.o source/kmain.o source/io.o \
+          drivers/framebuffer.o drivers/pic.o drivers/keyboard.o \
+          drivers/interrupts.o drivers/interrupt_handlers.o drivers/interrupt_asm.o
 CC = gcc
 CFLAGS = -m32 -nostdlib -nostdinc -fno-builtin -fno-stack-protector \
          -nostartfiles -nodefaultlibs -Wall -Wextra -Werror -c
